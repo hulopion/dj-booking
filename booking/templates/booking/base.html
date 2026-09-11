@@ -1,4 +1,5 @@
 {% load static %}
+{% load booking_analytics %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +13,8 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    {% posthog_analytics %}
 </head>
 
 <body>

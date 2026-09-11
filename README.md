@@ -67,6 +67,18 @@ Add this vars to settings.py
     BOOKING_SUCCESS_REDIRECT_URL = "Success redirect url"
     BOOKING_DISABLE_URL = "Redirect to this url if create booking is disable"
 
+Analytics
+=============
+To send page analytics to PostHog, set your project API key. The snippet loads
+only when the key is present, so no data is sent until you opt in.
+
+  .. code-block:: python
+
+    BOOKING_POSTHOG_API_KEY = "phc_your_project_api_key"
+    BOOKING_POSTHOG_HOST = "https://us.i.posthog.com"
+
+`BOOKING_POSTHOG_HOST` is optional and defaults to the US cloud. Set it to your region host.
+
 The App
 =======
 
